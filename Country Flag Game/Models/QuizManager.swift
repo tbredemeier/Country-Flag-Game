@@ -20,7 +20,6 @@ class QuizManager: ObservableObject {
     
     init() {
         reset()
-        goToNextQuestion()
     }
     
     func reset() {
@@ -29,6 +28,7 @@ class QuizManager: ObservableObject {
         score = 0
         progress = 0.0
         playingGame = true
+        goToNextQuestion()
     }
     
     func goToNextQuestion() {
