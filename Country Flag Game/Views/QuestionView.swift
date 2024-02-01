@@ -62,6 +62,7 @@ struct QuestionView: View {
     }
 }
 
+// note: your preview will look different if using Xcode 14
 #Preview {
     QuestionView()
 }

@@ -23,6 +23,7 @@ struct ProgressBar: View {
     }
 }
 
+// note: your preview will look different if using Xcode 14
 #Preview {
     ProgressBar(progress: 50)
 }

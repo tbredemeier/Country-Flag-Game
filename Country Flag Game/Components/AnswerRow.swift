@@ -37,6 +37,7 @@ struct AnswerRow: View {
     }
 }
 
+// note: your preview will look different if using Xcode 14
 #Preview {
     AnswerRow(answer: Answer(text: "Test", isCorrect: true))
 }
