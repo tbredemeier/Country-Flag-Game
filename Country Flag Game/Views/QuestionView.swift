@@ -10,8 +10,8 @@ import SwiftUI
 struct QuestionView: View {
     @EnvironmentObject var gameManager: GameManager
     var body: some View {
-        if gameManager.playingGame {
-            VStack(spacing: 20) {
+        VStack(spacing: 20) {
+            if gameManager.playingGame {
                 HStack {
                     Text("Country Flag Game")
                         .fontWeight(.heavy)
@@ -40,13 +40,7 @@ struct QuestionView: View {
                 .disabled(!gameManager.answerSelected)
                 Spacer()
             }
-            .foregroundColor(.yellow)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.cyan)
-            .navigationBarBackButtonHidden(true)
-        }
-        else {
-            VStack(spacing: 20) {
+            else {
                 Text("Country Flag Game")
                     .font(.title)
                     .fontWeight(.heavy)
@@ -57,9 +51,12 @@ struct QuestionView: View {
                 } label: {
                     CustomButton(text: "Play Again")
                 }
-
             }
         }
+        .foregroundColor(.yellow)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.cyan)
+        .navigationBarBackButtonHidden(true)
     }
 }
 
