@@ -52,7 +52,7 @@ struct QuestionView: View {
                 }
             }
         }
-        .foregroundColor(.yellow)
+        .foregroundStyle(.yellow)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.cyan)
         .navigationBarBackButtonHidden(true)

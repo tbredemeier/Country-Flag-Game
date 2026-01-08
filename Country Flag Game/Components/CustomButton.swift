@@ -12,7 +12,7 @@ struct CustomButton: View {
     var background: Color = .yellow
     var body: some View {
         Text(text)
-            .foregroundColor(.cyan)
+            .foregroundStyle(.cyan)
             .padding()
             .padding(.horizontal)
             .background(background)
